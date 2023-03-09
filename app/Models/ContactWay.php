@@ -10,7 +10,7 @@ class ContactWay extends Model
 {
     use HasFactory;   
 
-    //Relacion Inversa 1:M
+    //Relacion Inversa M:1
     public function contact(): BelongsTo
     {
         return $this->belongsTo(Contact::class);        

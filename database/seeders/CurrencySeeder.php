@@ -20,7 +20,7 @@ class CurrencySeeder extends Seeder
         ]);
         Currency::create([
             'full_name' => 'Peso cubano MLC',
-            'short_name' => 'CUP',
+            'short_name' => 'MLC',
             'exchange_rate' => '1',            
         ]);
         Currency::create([

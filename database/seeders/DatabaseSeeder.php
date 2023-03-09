@@ -25,6 +25,8 @@ class DatabaseSeeder extends Seeder
         $this->call(BankCardSeeder::class);                  
         $this->call(LocationSeeder::class);                  
         $this->call(SupplierSeeder::class);                  
-        $this->call(ContactSupplierSeeder::class);                  
+        $this->call(ContactSupplierSeeder::class);
+        $this->call(CategorySeeder::class);
+        $this->call(ContractSeeder::class);
     }
 }

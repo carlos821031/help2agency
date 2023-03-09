@@ -6,18 +6,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class Currency extends Model
+class Category extends Model
 {
-    use HasFactory;   
+    use HasFactory;
 
-    protected $fillable = ['full_name', 'short_name', 'exchange_rate']; 
-
-    //Relacion 1:M
-    public function bank_cards(): HasMany{
-        return $this->hasMany(BankCard::class);
-    }
     //Relacion 1:M
     public function contracts(): HasMany{
         return $this->hasMany(Contract::class);
-    }
+    }   
 }
