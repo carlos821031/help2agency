@@ -13,16 +13,10 @@ return new class extends Migration
     {
         Schema::create('contact_ways', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
-            //$table->unsignedBigInteger('contact_id');
-            //$table->foreignId('contact_id'); 
-            $table->foreignId('contact_id')->constrained();   
-            //$table->foreign('contact_id')
-            //        ->references('id')->on('contacts')
-            //        ->onDelete('cascade')
-             //       ->onUpdate('cascade');            
+            $table->timestamps();            
+            $table->foreignId('contact_id')->constrained();                    
             $table->string('full_name')->comment('Nombre para la forma de contacto');            
-            $table->string('valor')->comment('Valor del medio de contactacto');
+            $table->string('value')->comment('Valor del medio de contactacto');
         });
     }
 
