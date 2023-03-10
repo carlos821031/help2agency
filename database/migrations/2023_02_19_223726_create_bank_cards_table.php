@@ -16,7 +16,7 @@ return new class extends Migration
             $table->timestamps();
             $table->string('alias')->comment('Alias');
             $table->string('bank_card_number')->comment('Tarjeta o cuenta del destinatario');
-            $table->string('description')->comment('Descripcion de la tarjeta.');
+            $table->string('description')->nullable()->comment('Descripcion de la tarjeta.');
             $table->foreignId('contact_id')->constrained();
             $table->foreignId('currency_id')->constrained();
         });
