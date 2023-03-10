@@ -27,8 +27,7 @@ return new class extends Migration
      * Reverse the migrations.
      */
     public function down(): void
-    {
-        Schema::dropIfExists('contact_suppliers'); 
+    {        
         Schema::dropIfExists('contact_supplier');      
     }
 };
