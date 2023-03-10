@@ -16,22 +16,22 @@ class ContactWaySeeder extends Seeder
         ContactWay::create([
             'contact_id' => '1',
             'full_name' => 'Home',
-            'valor' => '45524074',            
+            'value' => '1111111',            
         ]);
         ContactWay::create([
             'contact_id' => '2',
             'full_name' => 'Fijo',
-            'valor' => '7877-8133',            
+            'value' => '2222222',            
         ]);
         ContactWay::create([
             'contact_id' => '3',
             'full_name' => 'Fijo',
-            'valor' => '7833-6412',            
+            'value' => '3333333',            
         ]);
         ContactWay::create([
             'contact_id' => '4',
             'full_name' => 'Fijo',
-            'valor' => '48-696751',            
+            'value' => '4444444',            
         ]);     
     }
 }

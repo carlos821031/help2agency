@@ -25,7 +25,7 @@ class BankCardSeeder extends Seeder
         //
         BankCard::create([
             'alias' => 'MLC',
-            'bank_card_number' => '9225 9598 7692 3449',
+            'bank_card_number' => '1111 1111 1111 1111',
             'description' => 'Olibia MLC',
             'contact_id' => '2',
             'currency_id' => '2'           
@@ -33,7 +33,7 @@ class BankCardSeeder extends Seeder
         //
         BankCard::create([
             'alias' => 'Fiscal',
-            'bank_card_number' => '0598770002075018',
+            'bank_card_number' => '2222222222222222',
             'description' => 'Ada Cuenta Fiscal',
             'contact_id' => '3',
             'currency_id' => '1'           
@@ -41,7 +41,7 @@ class BankCardSeeder extends Seeder
         //
         BankCard::create([
             'alias' => 'MLC',
-            'bank_card_number' => '9225 0699 9178 6943',
+            'bank_card_number' => '3333 3333 3333 3333',
             'description' => 'La China MLC',
             'contact_id' => '4',
             'currency_id' => '2'           
