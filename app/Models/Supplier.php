@@ -25,5 +25,5 @@ class Supplier extends Model
     //Relacion 1:M
     public function contracts(): HasMany{
         return $this->hasMany(Contract::class);
-    }  
+    }    
 }
